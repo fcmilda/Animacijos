@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAUDOTI: transition, transform, hover */
+
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to top, #775953, #2d044b);
+    background-attachment: fixed;
+}
+
+h2 {
+    color: white;
+    font-family: tahoma;
+    text-align: center;
+    margin: 30px auto;
+}
+
+.blokas {
+    background: rgba(255, 255, 255, 0.3);
+    width: 600px;
+    height: 500px;
+    margin: auto;
+    padding: 0 200px;
+    border-radius: 100%;
+}
+
+.tree1 {
+    background: transparent;
+    width: 200px;
+    height: 200px;
+    border-top: solid 100px transparent;
+    border-left: solid 100px transparent;
+    border-right: solid 100px transparent;
+    border-bottom: solid 100px #799351; 
+}
+
+.tree2 {
+    background: transparent;
+    width: 200px;
+    height: 200px;
+    border-top: solid 100px transparent;
+    border-left: solid 100px transparent;
+    border-right: solid 100px transparent;
+    border-bottom: solid 100px #799351;
+    position: relative;
+    bottom: 120px;
+}
+
+.tree3 {
+    background: transparent;
+    width: 200px;
+    height: 200px;
+    border-top: solid 100px transparent;
+    border-left: solid 100px transparent;
+    border-right: solid 100px transparent;
+    border-bottom: solid 100px #799351;
+    position: relative;
+    bottom: 240px;
+}
+
+.tree4 {
+    margin: 0 auto;
+    background: #7c4927;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    bottom: 240px;  
+    
+}
+
+.element1 {
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 570px;
+    border-radius: 100px;
+    background: gold;
+    transition: transform 0.5s;
+}
+
+.blokas:hover .element1 {
+    transform: translateX(50px) translateY(60px);
+    box-shadow: 0 0 10px white;
+    background: rgb(187, 14, 49);
+}
+
+.element2 {
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 600px;
+    border-radius: 100px;
+    background: gold;
+    transition: transform 0.5s;
+}
+
+.blokas:hover .element2 {
+    transform: translateX(-50px) translateY(140px);
+    box-shadow: 0 0 10px white;
+    background:rgb(187, 14, 49);
+}
+
+.element3 {
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 630px;
+    border-radius: 100px;
+    background: gold;
+    transition: transform 0.5s;
+}
+
+.blokas:hover .element3 {
+    transform: translateX(60px) translateY(230px);
+    box-shadow: 0 0 10px white;
+    background:rgb(187, 14, 49);
+}
+
+.element4 {
+    margin: 0 auto;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    bottom: 660px;
+    border-radius: 100px;
+    background: gold;
+    transition: transform 0.5s;
+}
+
+.blokas:hover .element4 {
+    transform: scale(1.5);
+    box-shadow: 0 0 10px white;
+}
+
+/*su keyframe */
+
+.blokas .skaicius12 {
+    position:relative;
+    bottom: 350px;
+    left: 75px;
+    display: inline-block;
+    font-family: tahoma;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.blokas .skaicius3 {
+    position:relative;
+    bottom: 180px;
+    left: 250px;
+    display: inline-block;
+    font-family: tahoma;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.blokas .skaicius6 {
+    position:relative;
+    bottom: 0px;
+    left: -5px;
+    display: inline-block;
+    font-family: tahoma;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.blokas .skaicius9 {
+    position:relative;
+    bottom: 175px;
+    left: -250px;
+    display: inline-block;
+    font-family: tahoma;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+.blokas .rodykle {
+    width: 20px;
+    height: 80%;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    border-radius: 20px;
+    animation: animacija 60s linear infinite;
+    z-index: 1;
+}
+
+@keyframes animacija {
+    from  {
+        background: rgb(255, 255, 255);
+
+    }
+    to {
+        background: rgb(0, 0, 0);
+        transform: rotate(180deg);
+        
+    }
+}
